@@ -1,0 +1,14 @@
+Group ? BtheB Homework Assignment
+========================================================
+
+```{r}
+library(HSAUR2)
+summary(BtheB)
+```
+
+You can also embed plots, for example:
+
+```{r fig.width=7, fig.height=6}
+
+```
+
