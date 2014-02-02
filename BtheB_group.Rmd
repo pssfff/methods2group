@@ -1,9 +1,19 @@
-Group ? BtheB Homework Assignment
+Group 1 BtheB Homework Assignment
 ========================================================
+
+We created two regression lines each for treatments,"TAU" and "BtheB" from the "BtheB" data set.
+
+We found a steeper slope in the BtheB treatment plot, which indicates that the BtheB treatment is more effective for patietns with more severe depression.
+
 
 ```{r}
 library(HSAUR2)
+library(ggplot2)
+
+data("BtheB")
 summary(BtheB)
+qplot(bdi.pre, bdi.4m, data=BtheB, geom=c("point", "smooth"),method="lm") + facet_grid(.~ treatment) + theme_bw()
+
 ```
 
 You can also embed plots, for example:
